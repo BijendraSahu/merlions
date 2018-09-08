@@ -1,0 +1,154 @@
+@media screen and (min-width:320px) and (max-width:479px) {
+    .prihul_header {
+        padding: 10px;
+    }
+    .logo_imgbox {
+        left: 5px;
+        width: 80px;
+        top: 15px;
+    }
+    .add_cardblk i
+    {
+        margin-right: 5px;
+    }
+    .banner_submit_btn
+    {
+        bottom: 15px;
+        border-radius: 5px;
+        transform: rotate(0deg);
+        left: 50%;
+        padding: 10px 15px;
+        right: initial;
+        margin-left: -70px;
+    }
+    .search_txt
+    {
+        width: 23%;
+        font-size: 16px;
+    }
+    .img_searchbox
+    {
+        width: 96%;
+        margin-left: 0px;
+        left: 2%;
+        padding-right: 25%;
+        bottom: 70px;
+    }
+}
+@media screen and (min-width:480px) and (max-width:767px) {
+    .banner_submit_btn
+    {
+        bottom: 200px;
+        padding: 12px 15px;
+    }
+    .img_searchbox
+    {
+        width: 400px;
+        padding-right: 100px;
+        margin-left: -200px;
+    }
+    .search_txt
+    {
+        width: 90px;
+        font-size: 18px;
+    }
+
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+    .chef_animation
+    {
+        display: none;
+    }
+    .header_search
+    {
+        font-size: 16px;
+    }
+    .banner_menu_containner
+    {
+        padding: 0px;
+        min-height: 50px;
+    }
+    .bootom_menu
+    {
+        position: absolute;
+        width: 200px;
+        right: -210px;
+        top: 46px;
+        background-color: #ffffff;
+        color: #666666;
+        z-index: 5;
+        text-align: left;
+        transition: .5s all;
+    }
+    .bootom_menu li{
+        width: 100%;
+        border-bottom: solid thin #e1e1e1;
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+    .prihul_bottom_menu
+    {
+        width: 100px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        float: right;
+        letter-spacing: 1px;
+        display: block;
+        background-color: #fff;
+        color: #666;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    .bootom_menu_show
+    {
+        right: 10px;
+    }
+    .prihul_testomonial
+    {
+        padding: 150px 20px 20px;
+    }
+    .test_imgbox
+    {
+        width: 100%;
+        top: 15px;
+        left: 0px;
+    }
+    .prihul_footer
+    {
+        padding: 15px 0px;
+    }
+    .testomonial_slider_box
+    {
+        margin-bottom: 70px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .chef_animation
+    {
+        display: none;
+    }
+    .banner_menu_containner
+    {
+        padding: 0px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1199px) {
+    .search_txt
+    {
+        width: 125px;
+    }
+    .img_searchbox {
+        width: 450px;
+        margin-left: -225px;
+        padding-right: 135px;
+    }
+    .chef_animation
+    {
+        width: 380px;
+        left: -50px;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1360px) {
+
+}
