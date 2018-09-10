@@ -3,6 +3,12 @@
 @section('title','List of Hotels')
 
 @section('content')
+    <style>
+        .coool
+        {
+
+        }
+        </style>
     {{--<script src="{{ url('assets/js/jquery.dataTables.min.js') }}"></script>--}}
     {{--<link href="{{ url('assets/css/jquery.dataTables.min.css') }}" rel='stylesheet'/>--}}
     <a href="#" class="btn btn-sm bg-danger btnSet btn-primary add-hotel btnSet pull-right">
@@ -23,12 +29,13 @@
                 <thead>
                 <tr class="bg-info">
                     <th class="hidden">Id</th>
-                    <th class="options">Options</th>
+                    <th class="coool">Options</th>
                     <th>Hotel Name</th>
                     <th>Hotel Type</th>
                     <th>Country</th>
                     <th>Rent</th>
-                    <th>Extra Rent</th>
+                    <th>Extra Pax</th>
+                    <th>Child Rent</th>
                     {{--<th>Booking Status</th>--}}
                 </tr>
                 </thead>
@@ -60,6 +67,7 @@
                             <td>@if($hotel->country != null){{$hotel->country->nicename}}@endif</td>
                             <td>{{$hotel->rent}}</td>
                             <td>{{$hotel->extra_rent}}</td>
+                            <td>{{$hotel->child_price}}</td>
                             {{--<td>@if($hotel->is_booked == 1) <p class="bg-danger">Booked</p>--}}
                             {{--@else--}}
                             {{--<p class="bg-success">Available</p>--}}
@@ -102,7 +110,7 @@
             $('.modal-body').html('<img height="50px" class="center-block" src="{{ url('assets/img/loading.gif') }}"/>');
             $('#myModal .modal-title').html('Confirm Deletion');
             $('#myModal .modal-body').html('<h5>Are you sure want to delete this hotel<h5/>');
-            $('#modalBtn').html('<a class="btn btn-sm btn-danger" href="{{ url('hotel') }}/' + id +
+            $('#modalBtn').html('<a class="btn btn-sm btn-danger" href="{{ url('hoteldelete') }}/' + id +
                 '/delete"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Confirm</a>'
             );
         });

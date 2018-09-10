@@ -27,11 +27,20 @@
         </div>
     </div>
     <div class='form-group'>
-        {!! Form::label('rent', 'Extra Rent *', ['class' => 'col-sm-2 control-label']) !!}
+        {!! Form::label('rent', 'Extra Pax *', ['class' => 'col-sm-2 control-label']) !!}
         <div class='col-sm-9'>
             {!! Form::text('extra_rent', $hotel->extra_rent, ['class' => 'form-control input-sm required amount', 'placeholder'=>'Extra Rent']) !!}
         </div>
     </div>
+    <div class='form-group'>
+        {!! Form::label('rent', 'Child Rent *', ['class' => 'col-sm-2 control-label']) !!}
+        <div class='col-sm-9'>
+            {!! Form::text('child_rent', $hotel->child_price, ['class' => 'form-control input-sm required amount', 'placeholder'=>'Extra Rent']) !!}
+        </div>
+    </div>
+
+
+
     <div class='form-group'>
         <div class='col-sm-offset-2 col-sm-9'>
             {!! Form::submit('Submit', ['class' => 'btn btn-sm btn-primary']) !!}

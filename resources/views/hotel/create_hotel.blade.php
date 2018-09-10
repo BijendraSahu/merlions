@@ -38,9 +38,15 @@
         </div>
     </div>
     <div class='form-group'>
-        {!! Form::label('rent', 'Extra Rent *', ['class' => 'col-sm-2 control-label']) !!}
+        {!! Form::label('rent', 'Extra Pax *', ['class' => 'col-sm-2 control-label']) !!}
         <div class='col-sm-9'>
             {!! Form::text('extra_rent', null, ['class' => 'form-control input-sm required amount', 'placeholder'=>'Extra Rent']) !!}
+        </div>
+    </div>
+    <div class='form-group'>
+        {!! Form::label('rent', 'Child Rent *', ['class' => 'col-sm-2 control-label']) !!}
+        <div class='col-sm-9'>
+            {!! Form::text('child_rent', null, ['class' => 'form-control input-sm required amount', 'placeholder'=>'Extra Rent']) !!}
         </div>
     </div>
     <div class='form-group'>

@@ -79,9 +79,9 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    {{--<td width="19%" align="center"><a href="user_master" class="a_txt"><i--}}
+                    {{--<td width="19%" align="center"><a href="Allbookins" class="a_txt"><i--}}
                                     {{--class="fa awesome_style animated-hover faa-tada faa-fast fa-users"></i><br>--}}
-                            {{--<h4>Users</h4></a></td>--}}
+                            {{--<h4>All bookings</h4></a></td>--}}
 
                     <td width="19%" align="center"><a href="{{url('hotel')}}" class="a_txt"><i
                                     class="fa awesome_style animated-hover faa-tada faa-fast fa-hospital-o"></i><br>

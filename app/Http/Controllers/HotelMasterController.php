@@ -28,6 +28,7 @@ class HotelMasterController extends Controller
         $hotel->country_id = request('country_id');
         $hotel->rent = request('rent');
         $hotel->extra_rent = request('extra_rent');
+        $hotel->child_price = request('child_rent');
         $hotel->save();
         return redirect('hotel')->with('message', 'Hotel has been added...!');
     }
@@ -47,6 +48,7 @@ class HotelMasterController extends Controller
         $hotel->country_id = request('country_id');
         $hotel->rent = request('rent');
         $hotel->extra_rent = request('extra_rent');
+        $hotel->child_price = request('child_rent');
         $hotel->save();
         return redirect('hotel')->with('message', 'Hotel has been updated...!');
     }
